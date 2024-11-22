@@ -1,5 +1,7 @@
-import { FcGoogle } from "react-icons/fc"
-import { FaGithub } from "react-icons/fa"
+import { FcGoogle } from 'react-icons/fc'
+import { FaGithub } from 'react-icons/fa'
+
+import { SignInFlow } from '../types'
 
 import { 
   Card, 
@@ -7,13 +9,18 @@ import {
   CardTitle,
   CardDescription,
   CardContent
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
+} from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
+import { Separator } from '@/components/ui/separator'
 
 
-export const SignInCard = () => {
+interface SignInCardProps {
+    setState: (state: SignInFlow) => void
+}
+
+
+export const SignInCard = ({ setState }) => {
   return (
     <Card className="w-full h-full p-8">
       <CardHeader className="px-0 pt-0">
@@ -69,7 +76,7 @@ export const SignInCard = () => {
             Continue with GitHub
           </Button>
           <p className="text-xs text-muted-foreground">
-            Don't have an account? <span className="text-sky-700 hover:underline cursor-pointer">Sign Up.</span>
+            Don't have an account? <span onClick={() => setState('signUp')} className="text-sky-700 hover:underline cursor-pointer">Sign Up.</span>
           </p>
         </div>
       </CardContent>
