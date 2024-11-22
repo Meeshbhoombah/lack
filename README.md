@@ -5,7 +5,7 @@ Built to modernize my React skills.
 
 ## Getting Started
 ### Prerequisites
-[Bun](https://bun.sh/) v1.1.36. 
+Bun v1.1.36. 
 ```
 curl -fsSL https://bun.sh/install | bash -s "bun-v1.1.36"
 ```
