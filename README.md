@@ -4,22 +4,23 @@ A Slack clone
 Built to modernize my React skills.
 
 ## Getting Started
-### Dependencies
-Bun
+### Prerequisites
+Bun v1.1.36. 
 ```
+curl -fsSL https://bun.sh/install | bash -s "bun-v1.1.36"
 ```
 
 ### Installation
-Clone this repository.
+1. Clone this repository.
 ```
 ```
 
-`cd` into the repository.
+1. `cd` into the repository.
 ```
 cd lack/
 ```
 
-Install dependencies with Bun.
+1. Install dependencies with Bun.
 ```
 bun install
 ```
@@ -30,7 +31,7 @@ Run the Next.js frontend development server with Bun.
 bun run dev
 ```
 
-## Technologies
+## Built With
 - Bun
 - Next.js
 - React
