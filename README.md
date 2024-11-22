@@ -5,22 +5,24 @@ Built to modernize my React skills.
 
 ## Getting Started
 ### Prerequisites
-Bun v1.1.36. 
+[Bun](https://bun.sh/) v1.1.36. 
 ```
 curl -fsSL https://bun.sh/install | bash -s "bun-v1.1.36"
 ```
+Or, find installation instructions [here](https://bun.sh/docs/installation#:~:text=To%20install%20a%20specific%20version%20of%20Bun%2C%20you%20can%20pass,or%20bun%2Dv1.1.1%20.).
 
 ### Installation
 1. Clone this repository.
 ```
+git clone git@github.com:Meeshbhoombah/lack.git
 ```
 
-1. `cd` into the repository.
+2. `cd` into the repository.
 ```
 cd lack/
 ```
 
-1. Install dependencies with Bun.
+3. Install dependencies with Bun.
 ```
 bun install
 ```
