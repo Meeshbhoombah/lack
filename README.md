@@ -1,0 +1,2 @@
+# lack
+A Slack clone
