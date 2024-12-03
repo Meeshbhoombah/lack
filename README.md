@@ -11,6 +11,11 @@ curl -fsSL https://bun.sh/install | bash -s "bun-v1.1.36"
 ```
 Or, find installation instructions [here](https://bun.sh/docs/installation#:~:text=To%20install%20a%20specific%20version%20of%20Bun%2C%20you%20can%20pass,or%20bun%2Dv1.1.1%20.).
 
+Convex v1.17.3
+```
+```
+Or, find installation instructions [here]().
+
 ### Installation
 1. Clone this repository.
 ```
@@ -31,6 +36,11 @@ bun install
 Run the Next.js frontend development server with Bun.
 ```
 bun run dev
+```
+
+Run the Convex development server with Bun.
+```
+bunx convex dev
 ```
 
 ## Built With
