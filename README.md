@@ -115,4 +115,5 @@ bunx convex env set AUTH_GOOGLE_ID yourgoogleclientsecret
     + [Convex Next.js Quickstart](https://docs.convex.dev/quickstart/nextjs)
     + [Convex Auth -- OAuth](https://labs.convex.dev/auth/config/oauth)
     + [Convex Auth -- Password](https://labs.convex.dev/auth/config/passwords)
+    + [Convex -- Queries](https://docs.convex.dev/functions/query-functions)
 
