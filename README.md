@@ -44,7 +44,7 @@ bunx convex dev
 ```
 
 3. Create a GitHub App (for lack's GitHub sign-in feature). Find instructions 
-   [here](https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app#registering-a-github-app). 
+[here](https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app#registering-a-github-app). 
    Use the generated [HTTP Actions URL](https://labs.convex.dev/auth/config/oauth#callback-url) 
    as the Callback URL when creating a GitHub App (it can also temporarily 
    serve as the App's Webhook URL).
