@@ -96,7 +96,7 @@ bunx convex env set AUTH_GOOGLE_ID yourgoogleclientid
 
 10. Set the Google Client Secret within the Convex backend with Bun.
 ```
-bunx convex env set AUTH_GOOGLE_ID yourgoogleclientsecret
+bunx convex env set AUTH_GOOGLE_SECRET yourgoogleclientsecret
 ```
 
 ## Built With
