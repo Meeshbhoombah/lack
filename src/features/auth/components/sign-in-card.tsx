@@ -29,7 +29,7 @@ export const SignInCard = ({ setState }) => {
   const [password, setPassword] = useState('')
 
 
-  const handleOAuthSignin = (value: 'github' | 'google') => {
+  const oAuthSignin = (value: 'github' | 'google') => {
     signIn(value)
   }
 
@@ -70,7 +70,7 @@ export const SignInCard = ({ setState }) => {
         <div className="flex flex-col gap-y-2.5">
           <Button
             disabled={false}
-            onClick={() => {}}
+            onClick={() => {oAuthSignin('google')}}
             variant="outline"
             size="lg"
             className="w-full relative"
@@ -80,7 +80,7 @@ export const SignInCard = ({ setState }) => {
           </Button>
           <Button
             disabled={false}
-            onClick={() => {handleOAuthSignin('github')}}
+            onClick={() => {oAuthSignin('github')}}
             variant="outline"
             size="lg"
             className="w-full relative"
