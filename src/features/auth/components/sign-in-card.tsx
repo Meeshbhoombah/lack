@@ -27,10 +27,15 @@ export const SignInCard = ({ setState }) => {
   const { signIn } = useAuthActions()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [pending, setPending] = useState(false)
 
 
   const oAuthSignin = (value: 'github' | 'google') => {
+    setPending(true)
     signIn(value)
+      .finally(() => {
+        setPending(false)
+      })
   }
 
 
@@ -47,7 +52,7 @@ export const SignInCard = ({ setState }) => {
       <CardContent className="space-y-5 px-0 pb-0">
         <form className="space-y-2.5">
           <Input 
-            disabled={false}
+            disabled={pending}
             value={email}
             onChange={(e) => { setEmail(e.target.value)}}
             placeholder="Email"
@@ -55,7 +60,7 @@ export const SignInCard = ({ setState }) => {
             required
           />
           <Input 
-            disabled={false}
+            disabled={pending}
             value={password}
             onChange={(e) => {setPassword(e.target.value)}}
             placeholder="Password"
@@ -69,7 +74,7 @@ export const SignInCard = ({ setState }) => {
         <Separator />
         <div className="flex flex-col gap-y-2.5">
           <Button
-            disabled={false}
+            disabled={pending}
             onClick={() => {oAuthSignin('google')}}
             variant="outline"
             size="lg"
@@ -79,7 +84,7 @@ export const SignInCard = ({ setState }) => {
             Continue with Google
           </Button>
           <Button
-            disabled={false}
+            disabled={pending}
             onClick={() => {oAuthSignin('github')}}
             variant="outline"
             size="lg"
