@@ -108,3 +108,11 @@ bunx convex env set AUTH_GOOGLE_ID yourgoogleclientsecret
 - shadcn/ui
 - Convex
 
+## Resources
+- Client
+    + [shadcn Next.js](https://ui.shadcn.com/docs/installation/next)
+- Server
+    + [Convex Next.js Quickstart](https://docs.convex.dev/quickstart/nextjs)
+    + [Convex Auth -- OAuth](https://labs.convex.dev/auth/config/oauth)
+    + [Convex Auth -- Password](https://labs.convex.dev/auth/config/passwords)
+
